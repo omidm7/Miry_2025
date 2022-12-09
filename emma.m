@@ -2,7 +2,7 @@
 
 figure;
 ax = gca;
-mouse = 1;
+mouse = 8;
 day = 3;
 cell = 1;
 trace = all_fluorescence{mouse,day}(cell,:);
@@ -32,5 +32,9 @@ plot_title = sprintf('Mouse %d on Day %d', mouse, day);
 title(plot_title)
 
 hold off
+
+
+
+
 
  
