@@ -37,7 +37,7 @@ all_3_1_max = {all_max{1,1}((jimmy_3_1_global_indices(:,4)));...
     all_max{9,1}((chuck_3_1_global_indices(:,4)));...
     all_max{10,1}((lenny_3_1_global_indices(:,4)))}
 
-%% Find the maximum amplitude of fluorescence only for Group 3_1 neurons for every animal *during the pre-shock period* of fear conditioning
+%% Find the maximum amplitude of fluorescence only for Group 3_1 neurons for every animal during fear conditioning
 
 all_max_preshock = {max(all_fluorescence{1, 4}(:,1:740), [], 2);...
     max(all_fluorescence{2, 4}(:,1:740), [], 2);...
@@ -49,40 +49,3 @@ all_max_preshock = {max(all_fluorescence{1, 4}(:,1:740), [], 2);...
     max(all_fluorescence{8, 4}(:,1:740), [], 2);...
     max(all_fluorescence{9, 4}(:,1:740), [], 2);...
     max(all_fluorescence{10, 4}(:,1:740), [], 2)}
-
-%% Find frequency (events/min) for Group 3_1 neurons for every shocked animal (not controls)
-
-all_3_1_during_FC_epm = ...
-    {(sum(jimmy_3_1_all_peaks{1,4},2))/6.5
-    (sum(nelson_3_1_all_peaks{1,4},2))/6.5
-    (sum(otis_3_1_all_peaks{1,4},2))/6.5
-    (sum(zach_3_1_all_peaks{1,4},2))/6.5
-    (sum(chuck_3_1_all_peaks{1,4},2))/6.5
-    (sum(lenny_3_1_all_peaks{1,4},2))/6.5}
-
-% pre-shock
-all_3_1_during_FC_preshock_epm = ...
-    {(sum(jimmy_3_1_all_peaks{1,4}(:,1:740),2)/2.46)
-    (sum(nelson_3_1_all_peaks{1,4}(:,1:740),2)/2.46)
-    (sum(otis_3_1_all_peaks{1,4}(:,1:740),2)/2.46)
-    (sum(zach_3_1_all_peaks{1,4}(:,1:740),2)/2.46)
-    (sum(chuck_3_1_all_peaks{1,4}(:,1:740),2)/2.46)
-    (sum(lenny_3_1_all_peaks{1,4}(:,1:740),2)/2.46)}
-
-% inter-shock
-all_3_1_during_FC_intershock_epm = ...
-    {(sum(jimmy_3_1_all_peaks{1,4}(:,741:1649),2)/3.03)
-    (sum(nelson_3_1_all_peaks{1,4}(:,741:1649),2)/3.03)
-    (sum(otis_3_1_all_peaks{1,4}(:,741:1649),2)/3.03)
-    (sum(zach_3_1_all_peaks{1,4}(:,741:1649),2)/3.03)
-    (sum(chuck_3_1_all_peaks{1,4}(:,741:1649),2)/3.03)
-    (sum(lenny_3_1_all_peaks{1,4}(:,741:1649),2)/3.03)}
-
-% post-shock
-all_3_1_during_FC_postshock_epm = ...
-    {(sum(jimmy_3_1_all_peaks{1,4}(:,1650:1949),2)/1)
-    (sum(nelson_3_1_all_peaks{1,4}(:,1650:1949),2)/1)
-    (sum(otis_3_1_all_peaks{1,4}(:,1650:1949),2)/1)
-    (sum(zach_3_1_all_peaks{1,4}(:,1650:1949),2)/1)
-    (sum(chuck_3_1_all_peaks{1,4}(:,1650:1949),2)/1)
-    (sum(lenny_3_1_all_peaks{1,4}(:,1650:1949),2)/1)}
