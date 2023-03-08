@@ -91,15 +91,3 @@ all_3_1_during_FC_postshock_epm = ...
 %%
 jimmy_all_active_during_FC = all_fluorescence{1,4}(jimmy_5_1a_global_indices(:,4),:)
 
-%%
-% find peaks only for Chuck, Day 3, first 5 minutes of exploration
-% x = Cell{row,column}(row,column)
-% x = Cell{mouse,day}(neurons,duration)
-chuck_all_peaks_session3_5min = all_peaks{9,3}(:,1:1500)
-
-%%
-% find peaks only for Chuck, Day 3, *engram neurons*, first 5 minutes of exploration
-% x = Cell{row,column}(row,column)
-% x = Cell{mouse,day}(neurons,duration)
-% x = Cell{mouse,day}(index_list(neurons,day),duration)
-chuck_engram_peaks_session3_5min = all_peaks{9,3}(chuck_5_1a_global_indices(:,3),:)
