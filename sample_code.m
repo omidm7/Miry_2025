@@ -86,3 +86,7 @@ all_3_1_during_FC_postshock_epm = ...
     (sum(zach_3_1_all_peaks{1,4}(:,1650:1949),2)/1)
     (sum(chuck_3_1_all_peaks{1,4}(:,1650:1949),2)/1)
     (sum(lenny_3_1_all_peaks{1,4}(:,1650:1949),2)/1)}
+
+
+%%
+jimmy_all_active_during_FC = all_fluorescence{1,4}(jimmy_5_1a_global_indices(:,4),:)
