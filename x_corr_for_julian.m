@@ -35,3 +35,14 @@ for i = 1:size(session, 1)
         corr_matrix(j,i) = corr_val;
     end
 end
+
+%% Find frequency for peaks, all neurons
+mouse = 10;
+day = 4;
+minutes = 4;
+% Retrieve the matrix corresponding to the mouse and day
+mouseMatrix = all_peaks{mouse, day}(:,148:390);
+
+% Sum the values for all neurons over time
+num_peaks = sum(mouseMatrix, 2)
+frequency = (num_peaks/minutes)
