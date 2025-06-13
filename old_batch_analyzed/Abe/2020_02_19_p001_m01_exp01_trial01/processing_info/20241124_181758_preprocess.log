@@ -1,0 +1,667 @@
+1/1: C:\Users\julia\Documents\EngramResearch\newBatchOfData2024\filesModified\MiniscopeFiles\Abe\2020_02_19_p001_m01_exp01_trial01
+1/1: C:\Users\julia\Documents\EngramResearch\newBatchOfData2024\filesModified\MiniscopeFiles\Abe\2020_02_19_p001_m01_exp01_trial01
+saving diary: C:\Users\julia\Documents\EngramResearch\newBatchOfData2024\filesModified\MiniscopeFiles\Abe\2020_02_19_p001_m01_exp01_trial01\processing_info\20241124_181758_preprocess.log
+options:
+                                matfilePath: ''
+                             matfileVarname: 'thisMovie'
+                                 runMatfile: 0
+                                showFigures: 1
+                             folderListPath: {'C:\Users\julia\Documents\EngramResearch\newBatchOfData2024\filesModified\MiniscopeFiles\Abe\2020_02_19_p001_m01_exp01_trial01'}
+                    checkConcurrentAnalysis: 0
+                 concurrentAnalysisFilename: '_currentlyAnalyzingFolderCheck.mat'
+                    processMoviesSeparately: 0
+                              processMovies: 1
+                        loadOptionsFromFile: 0
+                    turboregNumFramesSubset: 5000
+                               turboregType: 'preselect'
+                                   turboreg: [1×1 struct]
+                                  dfofMovie: 1
+                                   dfofType: 'dfof'
+                           downsampleFactor: 4
+                                   pxToCrop: 14
+                           fileFilterRegexp: 'concat'
+                                inputPCAICA: 0
+                                askForPCICs: 0
+                                  frameList: []
+                                datasetName: '/1'
+                          outputDatasetName: '/1'
+                               refCropFrame: 100
+                               deflateLevel: 1
+                             supportedTypes: {'.h5'  '.hdf5'  '.tif'  '.tiff'  '.avi'  '.isxd'}
+                 calcDroppedFramesFromMovie: []
+                                    minType: 'soft'
+                                 minSoftPct: 1.0000e-03
+                                  waitbarOn: 1
+                                 saveMovies: 0
+                              saveDfofMovie: 0
+                              turboregMovie: 1
+                             normalizeMovie: 0
+                            downsampleMovie: 1
+                              logFileRegexp: '(recording.*.(txt|xml)|.*_metadata.mat)'
+                     nwbSettingsDatasetname: '/general/optophysiology/imaging_plane/description'
+                      h5SettingsDatasetname: '/movie/preprocessingSettingsAll'
+                             saveFilePrefix: ''
+                             saveFileSuffix: ''
+                                videoPlayer: 'matlab'
+    precomputedRegistrationCooordsFullMovie: ''
+options.turboreg:
+                           MAIN______________: {'====================='}
+                      checkConcurrentAnalysis: 0
+                            resetParallelPool: 0
+                              analyzeFromDisk: 0
+                   calcDroppedFramesFromMovie: []
+                   REGISTRATION______________: {'====================='}
+                                     mcMethod: 'turboreg'
+                                     parallel: 1
+                              registrationFxn: 'transfturboreg'
+                             turboregRotation: 0
+                                    RegisType: 1
+                        numTurboregIterations: 1
+                      turboregNumFramesSubset: 5000
+                                     pxToCrop: 14
+                     motionCorrectionRefFrame: 100
+                     regRegionUseBtwnSessions: 1
+                 df_AccumulatedFieldSmoothing: 0.5400
+                                     df_Niter: [500 400 200]
+                             df_PyramidLevels: 3
+     REGISTRATION_NORMALIZATION______________: {'====================='}
+                        normalizeMeanSubtract: 1
+               normalizeMeanSubtractNormalize: 1
+                    normalizeComplementMatrix: 1
+                                normalizeType: 'bandpass'
+                             normalizeFreqLow: 70
+                            normalizeFreqHigh: 100
+                        normalizeBandpassType: 'bandpass'
+                        normalizeBandpassMask: 'gaussian'
+                                      SmoothX: 10
+                                      SmoothY: 10
+                                      zapMean: 0
+            MOVIE_NORMALIZATION______________: {'====================='}
+                         filterBeforeRegister: 'bandpass'
+                     saveBeforeFilterRegister: 0
+                     saveFilterBeforeRegister: []
+                       filterBeforeRegFreqLow: 2
+                      filterBeforeRegFreqHigh: 60
+                filterBeforeRegImagejFFTLarge: 10000
+                filterBeforeRegImagejFFTSmall: 80
+                             medianFilterSize: 3
+                  MOVIE_DETREND______________: {'====================='}
+                                detrendDegree: 1
+             MOVIE_DOWNSAMPLING______________: {'====================='}
+                         downsampleFactorTime: 4
+                        downsampleFactorSpace: 2
+    IO_and_MOVIE_IDENTIFICATION______________: {'====================='}
+                             inputDatasetName: '/1'
+                            outputDatasetName: '/1'
+                             fileFilterRegexp: 'concat'
+                      processMoviesSeparately: 0
+                       loadMoviesFrameByFrame: 0
+                treatMoviesAsContinuousSwitch: 1
+                        loadMovieInEqualParts: 0
+                                  useParallel: 1
+                             nParallelWorkers: 13
+                               largeMovieLoad: 0
+                 STRIPE_REMOVAL______________: {'====================='}
+                       stripOrientationRemove: 'none'
+                                    stripSize: 7
+                          stripfreqLowExclude: 20
+                         stripfreqHighExclude: 20
+                        stripfreqBandpassType: 'highpass'
+                                 refCropFrame: 100
+            subject: 'm01'
+         subjectStr: 'm01'
+         subjectNum: 1
+           protocol: 'p001'
+              assay: 'NULL000'
+          assayType: 'NULL'
+           assayNum: 0
+              trial: 'trial01'
+            trialNo: 1
+               date: '2020_02_19'
+       imagingPlane: 'plane0'
+    imagingPlaneNum: 0
+movie 1/1: 
+###
+Getting movie info for 1\1: C:\Users\julia\Documents\EngramResearch\newBatchOfData2024\filesModified\MiniscopeFiles\Abe\2020_02_19_p001_m01_exp01_trial01\concat_abe_context.tif
+checking movies: 100|
+-------
+pre-allocating single ones matrix: 240   376  6000
+-------
+loading 1/1: C:\Users\julia\Documents\EngramResearch\newBatchOfData2024\filesModified\MiniscopeFiles\Abe\2020_02_19_p001_m01_exp01_trial01\concat_abe_context.tif
+===
+Running standard TIFF
+ans =
+    'uint8'
+movie class: uint8
+movie size: 240   376  6000
+x-dims: 240
+y-dims: 376
+z-dims: 6000
+movie size: 516.3573Mb | 240   376  6000 | uint8
+Elapsed time is 20.919094 seconds.
+###
+[Warning: The DrawMode property will be removed in a future release. Use the SortMethod property instead.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('newplot', 'C:\Program Files\MATLAB\R2024a\toolbox\matlab\graphics\axis\newplot.m', 82)" style="font-weight:bold">newplot</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024a\toolbox\matlab\graphics\axis\newplot.m',82,0)">line 82</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('matlab.graphics.internal.newplotimagewrapper', 'C:\Program Files\MATLAB\R2024a\toolbox\matlab\graphics\+matlab\+graphics\+internal\newplotimagewrapper.m', 7)" style="font-weight:bold">matlab.graphics.internal.newplotimagewrapper</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024a\toolbox\matlab\graphics\+matlab\+graphics\+internal\newplotimagewrapper.m',7,0)">line 7</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('imagesc', 'C:\Program Files\MATLAB\R2024a\toolbox\matlab\specgraph\imagesc.m', 51)" style="font-weight:bold">imagesc</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024a\toolbox\matlab\specgraph\imagesc.m',51,0)">line 51</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/modelPreprocessMovieFunction', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovieFunction.m', 863)" style="font-weight:bold">ciatah/modelPreprocessMovieFunction</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovieFunction.m',863,0)">line 863</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/modelPreprocessMovie', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovie.m', 42)" style="font-weight:bold">ciatah/modelPreprocessMovie</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovie.m',42,0)">line 42</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/runPipeline', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\runPipeline.m', 211)" style="font-weight:bold">ciatah/runPipeline</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\runPipeline.m',211,0)">line 211</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/display', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\display.m', 6)" style="font-weight:bold">ciatah/display</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\display.m',6,0)">line 6</a>)] 
+*******
+turboreg movie...
+Calculating and plotting correlation metric
+Calculating correlation metric: 58 | 25 | 42 | 92 | 8 | 83 | 33 | 75 | 100 | 17 | 67 | 50 | [Warning: The DrawMode property will be removed in a future release. Use the SortMethod property instead.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('subplot', 'C:\Program Files\MATLAB\R2024a\toolbox\matlab\graph2d\subplot.m', 563)" style="font-weight:bold">subplot</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024a\toolbox\matlab\graph2d\subplot.m',563,0)">line 563</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/modelPreprocessMovieFunction/subfxn_plotMotionCorrectionMetric', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovieFunction.m', 1837)" style="font-weight:bold">ciatah/modelPreprocessMovieFunction/subfxn_plotMotionCorrectionMetric</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovieFunction.m',1837,0)">line 1837</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/modelPreprocessMovieFunction', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovieFunction.m', 923)" style="font-weight:bold">ciatah/modelPreprocessMovieFunction</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovieFunction.m',923,0)">line 923</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/modelPreprocessMovie', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovie.m', 42)" style="font-weight:bold">ciatah/modelPreprocessMovie</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovie.m',42,0)">line 42</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/runPipeline', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\runPipeline.m', 211)" style="font-weight:bold">ciatah/runPipeline</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\runPipeline.m',211,0)">line 211</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/display', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\display.m', 6)" style="font-weight:bold">ciatah/display</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\display.m',6,0)">line 6</a>)] 
+[Warning: Ignoring extra legend entries.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('legend>process_inputs', 'C:\Program Files\MATLAB\R2024a\toolbox\matlab\scribe\legend.m', 590)" style="font-weight:bold">legend>process_inputs</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024a\toolbox\matlab\scribe\legend.m',590,0)">line 590</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('legend>make_legend', 'C:\Program Files\MATLAB\R2024a\toolbox\matlab\scribe\legend.m', 319)" style="font-weight:bold">legend>make_legend</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024a\toolbox\matlab\scribe\legend.m',319,0)">line 319</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('legend', 'C:\Program Files\MATLAB\R2024a\toolbox\matlab\scribe\legend.m', 263)" style="font-weight:bold">legend</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024a\toolbox\matlab\scribe\legend.m',263,0)">line 263</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/modelPreprocessMovieFunction/subfxn_plotMotionCorrectionMetric', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovieFunction.m', 1853)" style="font-weight:bold">ciatah/modelPreprocessMovieFunction/subfxn_plotMotionCorrectionMetric</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovieFunction.m',1853,0)">line 1853</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/modelPreprocessMovieFunction', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovieFunction.m', 923)" style="font-weight:bold">ciatah/modelPreprocessMovieFunction</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovieFunction.m',923,0)">line 923</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/modelPreprocessMovie', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovie.m', 42)" style="font-weight:bold">ciatah/modelPreprocessMovie</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovie.m',42,0)">line 42</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/runPipeline', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\runPipeline.m', 211)" style="font-weight:bold">ciatah/runPipeline</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\runPipeline.m',211,0)">line 211</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/display', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\display.m', 6)" style="font-weight:bold">ciatah/display</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\display.m',6,0)">line 6</a>)] 
+[Warning: The DrawMode property will be removed in a future release. Use the SortMethod property instead.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('subplot', 'C:\Program Files\MATLAB\R2024a\toolbox\matlab\graph2d\subplot.m', 563)" style="font-weight:bold">subplot</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024a\toolbox\matlab\graph2d\subplot.m',563,0)">line 563</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/modelPreprocessMovieFunction/subfxn_plotMotionCorrectionMetric', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovieFunction.m', 1855)" style="font-weight:bold">ciatah/modelPreprocessMovieFunction/subfxn_plotMotionCorrectionMetric</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovieFunction.m',1855,0)">line 1855</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/modelPreprocessMovieFunction', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovieFunction.m', 923)" style="font-weight:bold">ciatah/modelPreprocessMovieFunction</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovieFunction.m',923,0)">line 923</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/modelPreprocessMovie', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovie.m', 42)" style="font-weight:bold">ciatah/modelPreprocessMovie</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovie.m',42,0)">line 42</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/runPipeline', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\runPipeline.m', 211)" style="font-weight:bold">ciatah/runPipeline</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\runPipeline.m',211,0)">line 211</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/display', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\display.m', 6)" style="font-weight:bold">ciatah/display</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\display.m',6,0)">line 6</a>)] 
+[Warning: Ignoring extra legend entries.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('legend>process_inputs', 'C:\Program Files\MATLAB\R2024a\toolbox\matlab\scribe\legend.m', 590)" style="font-weight:bold">legend>process_inputs</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024a\toolbox\matlab\scribe\legend.m',590,0)">line 590</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('legend>make_legend', 'C:\Program Files\MATLAB\R2024a\toolbox\matlab\scribe\legend.m', 319)" style="font-weight:bold">legend>make_legend</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024a\toolbox\matlab\scribe\legend.m',319,0)">line 319</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('legend', 'C:\Program Files\MATLAB\R2024a\toolbox\matlab\scribe\legend.m', 263)" style="font-weight:bold">legend</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024a\toolbox\matlab\scribe\legend.m',263,0)">line 263</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/modelPreprocessMovieFunction/subfxn_plotMotionCorrectionMetric', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovieFunction.m', 1867)" style="font-weight:bold">ciatah/modelPreprocessMovieFunction/subfxn_plotMotionCorrectionMetric</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovieFunction.m',1867,0)">line 1867</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/modelPreprocessMovieFunction', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovieFunction.m', 923)" style="font-weight:bold">ciatah/modelPreprocessMovieFunction</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovieFunction.m',923,0)">line 923</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/modelPreprocessMovie', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovie.m', 42)" style="font-weight:bold">ciatah/modelPreprocessMovie</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovie.m',42,0)">line 42</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/runPipeline', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\runPipeline.m', 211)" style="font-weight:bold">ciatah/runPipeline</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\runPipeline.m',211,0)">line 211</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/display', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\display.m', 6)" style="font-weight:bold">ciatah/display</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\display.m',6,0)">line 6</a>)] 
+>>>>>>>>>>>>>>>>>>>>>
+Turboreg iteration 1/1
+Motion correction method: turboreg
+registering sublists: 1  3001  6000
+turboreg
+Movie dims: 240   376  6000 | Movie size: 2065.429Mb | 240   376  6000 | single
+$$$$$$$
+1-3000 1/2
+$$$$$$$
+ioptions = 
+  <a href="matlab:helpPopup('struct')" style="font-weight:bold">struct</a> with fields:
+
+                                   mcMethod: 'turboreg'
+    precomputedRegistrationCooordsFullMovie: ''
+                           turboregRotation: 0
+                                  RegisType: 1
+                                   parallel: 1
+                               meanSubtract: 1
+                      meanSubtractNormalize: 1
+                           complementMatrix: 1
+                              normalizeType: 'bandpass'
+                            registrationFxn: 'transfturboreg'
+                                    freqLow: 2
+                                   freqHigh: 60
+                                    SmoothX: 10
+                                    SmoothY: 10
+                                    zapMean: 0
+                    normalizeBeforeRegister: 'bandpass'
+                             imagejFFTLarge: 10000
+                             imagejFFTSmall: 80
+                saveNormalizeBeforeRegister: []
+                                 cropCoords: [108 87 272 212]
+                            closeMatlabPool: 0
+                                   refFrame: 100
+                             refFrameMatrix: [240×376 single]
+                              optsNoRMCorre: []
+               df_AccumulatedFieldSmoothing: 0.5400
+                                   df_Niter: [500 400 200]
+                           df_PyramidLevels: 3
+                             displayOptions: 1
+Movie dims: 240   376  6000 | Movie size: 2065.429Mb | 240   376  6000 | single
+options:
+                                   mcMethod: 'turboreg'
+                           inputDatasetName: '/1'
+                                  frameList: []
+                                   refFrame: 100
+                             refFrameMatrix: [240×376 single]
+                            registrationFxn: 'transfturboreg'
+                                  removeNan: 0
+                              nanReplaceVal: 0
+                             displayOptions: 1
+                         saveTurboregCoords: []
+             precomputedRegistrationCooords: []
+    precomputedRegistrationCooordsFullMovie: ''
+                                  RegisType: 1
+                                    SmoothX: 10
+                                    SmoothY: 10
+                                    minGain: 0
+                                     Levels: 3
+                                 Lastlevels: 1
+                                    Epsilon: 1.1921e-07
+                                    zapMean: 0
+                                     Interp: 'bilinear'
+                           turboregRotation: 0
+                                   maxFrame: []
+                           subsetSizeFrames: 2000
+                                   parallel: 1
+                            closeMatlabPool: 0
+                                  blackEdge: 0
+                                 cropCoords: [108 87 272 212]
+                                removeEdges: 0
+                                   pxToCrop: 4
+                           altMovieRegister: []
+                        altMovieRegisterNum: 2
+                           complementMatrix: 1
+                               meanSubtract: 1
+                      meanSubtractNormalize: 1
+                              normalizeType: 'bandpass'
+                               matlabdiskR1: 10
+                               matlabdiskR2: 3
+                     bandpassBeforeRegister: 0
+                    normalizeBeforeRegister: 'bandpass'
+                             imagejFFTLarge: 10000
+                             imagejFFTSmall: 80
+                           normalizeFreqLow: 40
+                          normalizeFreqHigh: 100
+                      normalizeBandpassType: 'bandpass'
+                      normalizeBandpassMask: 'gaussian'
+                saveNormalizeBeforeRegister: []
+                                    freqLow: 2
+                                   freqHigh: 60
+                                   showFigs: 1
+                                  waitbarOn: 1
+                      returnNormalizedMovie: 0
+                                computeCorr: 0
+                              optsNoRMCorre: []
+                                  dfExclude: []
+               df_AccumulatedFieldSmoothing: 0.5400
+                                   df_Niter: [500 400 200]
+                           df_PyramidLevels: 3
+                          df_DisplayWaitbar: 0
+Starting motion correction (turboreg)...
+cropping stack...
+[Warning: The DrawMode property will be removed in a future release. Use the SortMethod property instead.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('newplot', 'C:\Program Files\MATLAB\R2024a\toolbox\matlab\graphics\axis\newplot.m', 82)" style="font-weight:bold">newplot</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024a\toolbox\matlab\graphics\axis\newplot.m',82,0)">line 82</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('matlab.graphics.internal.newplotimagewrapper', 'C:\Program Files\MATLAB\R2024a\toolbox\matlab\graphics\+matlab\+graphics\+internal\newplotimagewrapper.m', 7)" style="font-weight:bold">matlab.graphics.internal.newplotimagewrapper</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024a\toolbox\matlab\graphics\+matlab\+graphics\+internal\newplotimagewrapper.m',7,0)">line 7</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('imagesc', 'C:\Program Files\MATLAB\R2024a\toolbox\matlab\specgraph\imagesc.m', 51)" style="font-weight:bold">imagesc</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024a\toolbox\matlab\specgraph\imagesc.m',51,0)">line 51</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciapkg.motion_correction.turboregMovie/cropAndNormalizeInputMovie', 'C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+motion_correction\turboregMovie.m', 1195)" style="font-weight:bold">ciapkg.motion_correction.turboregMovie/cropAndNormalizeInputMovie</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+motion_correction\turboregMovie.m',1195,0)">line 1195</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciapkg.motion_correction.turboregMovie', 'C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+motion_correction\turboregMovie.m', 391)" style="font-weight:bold">ciapkg.motion_correction.turboregMovie</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+motion_correction\turboregMovie.m',391,0)">line 391</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciapkg.api.turboregMovie', 'C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+api\turboregMovie.m', 10)" style="font-weight:bold">ciapkg.api.turboregMovie</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+api\turboregMovie.m',10,0)">line 10</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/modelPreprocessMovieFunction/subfxn_turboregInputMovie', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovieFunction.m', 2057)" style="font-weight:bold">ciatah/modelPreprocessMovieFunction/subfxn_turboregInputMovie</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovieFunction.m',2057,0)">line 2057</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/modelPreprocessMovieFunction', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovieFunction.m', 934)" style="font-weight:bold">ciatah/modelPreprocessMovieFunction</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovieFunction.m',934,0)">line 934</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/modelPreprocessMovie', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovie.m', 42)" style="font-weight:bold">ciatah/modelPreprocessMovie</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovie.m',42,0)">line 42</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/runPipeline', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\runPipeline.m', 211)" style="font-weight:bold">ciatah/runPipeline</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\runPipeline.m',211,0)">line 211</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/display', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\display.m', 6)" style="font-weight:bold">ciatah/display</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\display.m',6,0)">line 6</a>)] 
+[Warning: The DrawMode property will be removed in a future release. Use the SortMethod property instead.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('newplot', 'C:\Program Files\MATLAB\R2024a\toolbox\matlab\graphics\axis\newplot.m', 82)" style="font-weight:bold">newplot</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024a\toolbox\matlab\graphics\axis\newplot.m',82,0)">line 82</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('matlab.graphics.internal.newplotimagewrapper', 'C:\Program Files\MATLAB\R2024a\toolbox\matlab\graphics\+matlab\+graphics\+internal\newplotimagewrapper.m', 7)" style="font-weight:bold">matlab.graphics.internal.newplotimagewrapper</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024a\toolbox\matlab\graphics\+matlab\+graphics\+internal\newplotimagewrapper.m',7,0)">line 7</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('imagesc', 'C:\Program Files\MATLAB\R2024a\toolbox\matlab\specgraph\imagesc.m', 51)" style="font-weight:bold">imagesc</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024a\toolbox\matlab\specgraph\imagesc.m',51,0)">line 51</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciapkg.motion_correction.turboregMovie/cropAndNormalizeInputMovie', 'C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+motion_correction\turboregMovie.m', 1199)" style="font-weight:bold">ciapkg.motion_correction.turboregMovie/cropAndNormalizeInputMovie</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+motion_correction\turboregMovie.m',1199,0)">line 1199</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciapkg.motion_correction.turboregMovie', 'C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+motion_correction\turboregMovie.m', 391)" style="font-weight:bold">ciapkg.motion_correction.turboregMovie</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+motion_correction\turboregMovie.m',391,0)">line 391</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciapkg.api.turboregMovie', 'C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+api\turboregMovie.m', 10)" style="font-weight:bold">ciapkg.api.turboregMovie</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+api\turboregMovie.m',10,0)">line 10</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/modelPreprocessMovieFunction/subfxn_turboregInputMovie', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovieFunction.m', 2057)" style="font-weight:bold">ciatah/modelPreprocessMovieFunction/subfxn_turboregInputMovie</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovieFunction.m',2057,0)">line 2057</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/modelPreprocessMovieFunction', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovieFunction.m', 934)" style="font-weight:bold">ciatah/modelPreprocessMovieFunction</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovieFunction.m',934,0)">line 934</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/modelPreprocessMovie', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovie.m', 42)" style="font-weight:bold">ciatah/modelPreprocessMovie</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovie.m',42,0)">line 42</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/runPipeline', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\runPipeline.m', 211)" style="font-weight:bold">ciatah/runPipeline</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\runPipeline.m',211,0)">line 211</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/display', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\display.m', 6)" style="font-weight:bold">ciatah/display</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\display.m',6,0)">line 6</a>)] 
+cropped dims: 240   376  3001
+cropped dims: 126   165  3001
+bandpass...
+[Warning: <a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+movie_processing\normalizeMovie.m',542,5)">File: normalizeMovie.m Line: 542 Column: 5</a>
+The temporary variable 'nanMask' will be cleared at the beginning of each iteration of the parfor-loop. If 'nanMask' is used before it is
+set, a runtime error will occur. For more information, see <a href="matlab: helpview([docroot '/parallel-computing/distcomp_ug.map'],'MIR_ERROR_UNINITIALIZED_TEMPORARY_VARIABLE')">Parallel for Loops in MATLAB, "Uninitialized Temporaries"</a>.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciapkg.api.normalizeMovie', 'C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+api\normalizeMovie.m', 10)" style="font-weight:bold">ciapkg.api.normalizeMovie</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+api\normalizeMovie.m',10,0)">line 10</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciapkg.motion_correction.turboregMovie/cropAndNormalizeInputMovie', 'C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+motion_correction\turboregMovie.m', 1279)" style="font-weight:bold">ciapkg.motion_correction.turboregMovie/cropAndNormalizeInputMovie</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+motion_correction\turboregMovie.m',1279,0)">line 1279</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciapkg.motion_correction.turboregMovie', 'C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+motion_correction\turboregMovie.m', 391)" style="font-weight:bold">ciapkg.motion_correction.turboregMovie</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+motion_correction\turboregMovie.m',391,0)">line 391</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciapkg.api.turboregMovie', 'C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+api\turboregMovie.m', 10)" style="font-weight:bold">ciapkg.api.turboregMovie</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+api\turboregMovie.m',10,0)">line 10</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/modelPreprocessMovieFunction/subfxn_turboregInputMovie', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovieFunction.m', 2057)" style="font-weight:bold">ciatah/modelPreprocessMovieFunction/subfxn_turboregInputMovie</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovieFunction.m',2057,0)">line 2057</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/modelPreprocessMovieFunction', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovieFunction.m', 934)" style="font-weight:bold">ciatah/modelPreprocessMovieFunction</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovieFunction.m',934,0)">line 934</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/modelPreprocessMovie', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovie.m', 42)" style="font-weight:bold">ciatah/modelPreprocessMovie</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovie.m',42,0)">line 42</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/runPipeline', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\runPipeline.m', 211)" style="font-weight:bold">ciatah/runPipeline</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\runPipeline.m',211,0)">line 211</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/display', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\display.m', 6)" style="font-weight:bold">ciatah/display</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\display.m',6,0)">line 6</a>)] 
+[Warning: <a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+movie_processing\normalizeMovie.m',929,5)">File: normalizeMovie.m Line: 929 Column: 5</a>
+The temporary variable 'nanMask' will be cleared at the beginning of each iteration of the parfor-loop. If 'nanMask' is used before it is
+set, a runtime error will occur. For more information, see <a href="matlab: helpview([docroot '/parallel-computing/distcomp_ug.map'],'MIR_ERROR_UNINITIALIZED_TEMPORARY_VARIABLE')">Parallel for Loops in MATLAB, "Uninitialized Temporaries"</a>.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciapkg.api.normalizeMovie', 'C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+api\normalizeMovie.m', 10)" style="font-weight:bold">ciapkg.api.normalizeMovie</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+api\normalizeMovie.m',10,0)">line 10</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciapkg.motion_correction.turboregMovie/cropAndNormalizeInputMovie', 'C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+motion_correction\turboregMovie.m', 1279)" style="font-weight:bold">ciapkg.motion_correction.turboregMovie/cropAndNormalizeInputMovie</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+motion_correction\turboregMovie.m',1279,0)">line 1279</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciapkg.motion_correction.turboregMovie', 'C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+motion_correction\turboregMovie.m', 391)" style="font-weight:bold">ciapkg.motion_correction.turboregMovie</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+motion_correction\turboregMovie.m',391,0)">line 391</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciapkg.api.turboregMovie', 'C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+api\turboregMovie.m', 10)" style="font-weight:bold">ciapkg.api.turboregMovie</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+api\turboregMovie.m',10,0)">line 10</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/modelPreprocessMovieFunction/subfxn_turboregInputMovie', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovieFunction.m', 2057)" style="font-weight:bold">ciatah/modelPreprocessMovieFunction/subfxn_turboregInputMovie</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovieFunction.m',2057,0)">line 2057</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/modelPreprocessMovieFunction', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovieFunction.m', 934)" style="font-weight:bold">ciatah/modelPreprocessMovieFunction</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovieFunction.m',934,0)">line 934</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/modelPreprocessMovie', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovie.m', 42)" style="font-weight:bold">ciatah/modelPreprocessMovie</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovie.m',42,0)">line 42</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/runPipeline', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\runPipeline.m', 211)" style="font-weight:bold">ciatah/runPipeline</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\runPipeline.m',211,0)">line 211</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/display', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\display.m', 6)" style="font-weight:bold">ciatah/display</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\display.m',6,0)">line 6</a>)] 
+***Running normalization: fft
+Running Matlab FFT
+0|5|10|15|20|25|30|35|40|45|50|55|60|65|70|75|80|85|90|95|100|100
+Finished.
+mean subtracting and complementing matrix...
+subtracting mean: 0|2|3|5|7|8|10|12|13|15|17|18|20|22|23|25|27|28|30|32|33|35|37|38|40|42|43|45|47|48|50|52|53|55|57|58|60|62|63|65|67|68|70|72|73|75|77|78|80|82|83|85|87|88|90|92|93|95|97|98|100|100
+[Warning: The DrawMode property will be removed in a future release. Use the SortMethod property instead.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('subplot', 'C:\Program Files\MATLAB\R2024a\toolbox\matlab\graph2d\subplot.m', 563)" style="font-weight:bold">subplot</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024a\toolbox\matlab\graph2d\subplot.m',563,0)">line 563</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciapkg.motion_correction.turboregMovie>subfxn_dispMovieFrames', 'C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+motion_correction\turboregMovie.m', 1320)" style="font-weight:bold">ciapkg.motion_correction.turboregMovie>subfxn_dispMovieFrames</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+motion_correction\turboregMovie.m',1320,0)">line 1320</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciapkg.motion_correction.turboregMovie/cropAndNormalizeInputMovie', 'C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+motion_correction\turboregMovie.m', 1304)" style="font-weight:bold">ciapkg.motion_correction.turboregMovie/cropAndNormalizeInputMovie</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+motion_correction\turboregMovie.m',1304,0)">line 1304</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciapkg.motion_correction.turboregMovie', 'C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+motion_correction\turboregMovie.m', 391)" style="font-weight:bold">ciapkg.motion_correction.turboregMovie</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+motion_correction\turboregMovie.m',391,0)">line 391</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciapkg.api.turboregMovie', 'C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+api\turboregMovie.m', 10)" style="font-weight:bold">ciapkg.api.turboregMovie</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+api\turboregMovie.m',10,0)">line 10</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/modelPreprocessMovieFunction/subfxn_turboregInputMovie', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovieFunction.m', 2057)" style="font-weight:bold">ciatah/modelPreprocessMovieFunction/subfxn_turboregInputMovie</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovieFunction.m',2057,0)">line 2057</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/modelPreprocessMovieFunction', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovieFunction.m', 934)" style="font-weight:bold">ciatah/modelPreprocessMovieFunction</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovieFunction.m',934,0)">line 934</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/modelPreprocessMovie', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovie.m', 42)" style="font-weight:bold">ciatah/modelPreprocessMovie</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovie.m',42,0)">line 42</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/runPipeline', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\runPipeline.m', 211)" style="font-weight:bold">ciatah/runPipeline</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\runPipeline.m',211,0)">line 211</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/display', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\display.m', 6)" style="font-weight:bold">ciatah/display</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\display.m',6,0)">line 6</a>)] 
+[Warning: The DrawMode property will be removed in a future release. Use the SortMethod property instead.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('subplot', 'C:\Program Files\MATLAB\R2024a\toolbox\matlab\graph2d\subplot.m', 563)" style="font-weight:bold">subplot</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024a\toolbox\matlab\graph2d\subplot.m',563,0)">line 563</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciapkg.motion_correction.turboregMovie>subfxn_dispMovieFrames', 'C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+motion_correction\turboregMovie.m', 1325)" style="font-weight:bold">ciapkg.motion_correction.turboregMovie>subfxn_dispMovieFrames</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+motion_correction\turboregMovie.m',1325,0)">line 1325</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciapkg.motion_correction.turboregMovie/cropAndNormalizeInputMovie', 'C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+motion_correction\turboregMovie.m', 1304)" style="font-weight:bold">ciapkg.motion_correction.turboregMovie/cropAndNormalizeInputMovie</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+motion_correction\turboregMovie.m',1304,0)">line 1304</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciapkg.motion_correction.turboregMovie', 'C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+motion_correction\turboregMovie.m', 391)" style="font-weight:bold">ciapkg.motion_correction.turboregMovie</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+motion_correction\turboregMovie.m',391,0)">line 391</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciapkg.api.turboregMovie', 'C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+api\turboregMovie.m', 10)" style="font-weight:bold">ciapkg.api.turboregMovie</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+api\turboregMovie.m',10,0)">line 10</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/modelPreprocessMovieFunction/subfxn_turboregInputMovie', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovieFunction.m', 2057)" style="font-weight:bold">ciatah/modelPreprocessMovieFunction/subfxn_turboregInputMovie</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovieFunction.m',2057,0)">line 2057</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/modelPreprocessMovieFunction', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovieFunction.m', 934)" style="font-weight:bold">ciatah/modelPreprocessMovieFunction</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovieFunction.m',934,0)">line 934</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/modelPreprocessMovie', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovie.m', 42)" style="font-weight:bold">ciatah/modelPreprocessMovie</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovie.m',42,0)">line 42</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/runPipeline', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\runPipeline.m', 211)" style="font-weight:bold">ciatah/runPipeline</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\runPipeline.m',211,0)">line 211</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/display', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\display.m', 6)" style="font-weight:bold">ciatah/display</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\display.m',6,0)">line 6</a>)] 
+[Warning: The DrawMode property will be removed in a future release. Use the SortMethod property instead.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('subplot', 'C:\Program Files\MATLAB\R2024a\toolbox\matlab\graph2d\subplot.m', 563)" style="font-weight:bold">subplot</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024a\toolbox\matlab\graph2d\subplot.m',563,0)">line 563</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciapkg.motion_correction.turboregMovie>subfxn_dispMovieFrames', 'C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+motion_correction\turboregMovie.m', 1329)" style="font-weight:bold">ciapkg.motion_correction.turboregMovie>subfxn_dispMovieFrames</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+motion_correction\turboregMovie.m',1329,0)">line 1329</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciapkg.motion_correction.turboregMovie/cropAndNormalizeInputMovie', 'C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+motion_correction\turboregMovie.m', 1304)" style="font-weight:bold">ciapkg.motion_correction.turboregMovie/cropAndNormalizeInputMovie</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+motion_correction\turboregMovie.m',1304,0)">line 1304</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciapkg.motion_correction.turboregMovie', 'C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+motion_correction\turboregMovie.m', 391)" style="font-weight:bold">ciapkg.motion_correction.turboregMovie</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+motion_correction\turboregMovie.m',391,0)">line 391</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciapkg.api.turboregMovie', 'C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+api\turboregMovie.m', 10)" style="font-weight:bold">ciapkg.api.turboregMovie</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+api\turboregMovie.m',10,0)">line 10</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/modelPreprocessMovieFunction/subfxn_turboregInputMovie', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovieFunction.m', 2057)" style="font-weight:bold">ciatah/modelPreprocessMovieFunction/subfxn_turboregInputMovie</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovieFunction.m',2057,0)">line 2057</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/modelPreprocessMovieFunction', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovieFunction.m', 934)" style="font-weight:bold">ciatah/modelPreprocessMovieFunction</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovieFunction.m',934,0)">line 934</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/modelPreprocessMovie', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovie.m', 42)" style="font-weight:bold">ciatah/modelPreprocessMovie</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovie.m',42,0)">line 42</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/runPipeline', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\runPipeline.m', 211)" style="font-weight:bold">ciatah/runPipeline</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\runPipeline.m',211,0)">line 211</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/display', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\display.m', 6)" style="font-weight:bold">ciatah/display</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\display.m',6,0)">line 6</a>)] 
+[Warning: Error updating Text.
+
+ String scalar or character vector must have valid interpreter syntax:
+Diff image #1 and #2
+] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('defaulterrorcallback', 'C:\Program Files\MATLAB\R2024a\toolbox\matlab\graphics\objectsystem\defaulterrorcallback.m', 12)" style="font-weight:bold">defaulterrorcallback</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024a\toolbox\matlab\graphics\objectsystem\defaulterrorcallback.m',12,0)">line 12</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciapkg.motion_correction.turboregMovie>subfxn_dispMovieFrames', 'C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+motion_correction\turboregMovie.m', 1334)" style="font-weight:bold">ciapkg.motion_correction.turboregMovie>subfxn_dispMovieFrames</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+motion_correction\turboregMovie.m',1334,0)">line 1334</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciapkg.motion_correction.turboregMovie/cropAndNormalizeInputMovie', 'C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+motion_correction\turboregMovie.m', 1304)" style="font-weight:bold">ciapkg.motion_correction.turboregMovie/cropAndNormalizeInputMovie</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+motion_correction\turboregMovie.m',1304,0)">line 1304</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciapkg.motion_correction.turboregMovie', 'C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+motion_correction\turboregMovie.m', 391)" style="font-weight:bold">ciapkg.motion_correction.turboregMovie</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+motion_correction\turboregMovie.m',391,0)">line 391</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciapkg.api.turboregMovie', 'C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+api\turboregMovie.m', 10)" style="font-weight:bold">ciapkg.api.turboregMovie</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+api\turboregMovie.m',10,0)">line 10</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/modelPreprocessMovieFunction/subfxn_turboregInputMovie', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovieFunction.m', 2057)" style="font-weight:bold">ciatah/modelPreprocessMovieFunction/subfxn_turboregInputMovie</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovieFunction.m',2057,0)">line 2057</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/modelPreprocessMovieFunction', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovieFunction.m', 934)" style="font-weight:bold">ciatah/modelPreprocessMovieFunction</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovieFunction.m',934,0)">line 934</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/modelPreprocessMovie', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovie.m', 42)" style="font-weight:bold">ciatah/modelPreprocessMovie</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovie.m',42,0)">line 42</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/runPipeline', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\runPipeline.m', 211)" style="font-weight:bold">ciatah/runPipeline</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\runPipeline.m',211,0)">line 211</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/display', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\display.m', 6)" style="font-weight:bold">ciatah/display</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\display.m',6,0)">line 6</a>)] 
+turboreg-ing...
+0% | 3% | 7% | 10% | 13% | 17% | 20% | 23% | 27% | 30% | 33% | 37% | 40% | 43% | 47% | 50% | 53% | 57% | 60% | 63% | 67% | 70% | 73% | 77% | 80% | 83% | 87% | 90% | 93% | 97% | 100% | 100%
+Elapsed time is 13.969197 seconds.
+bandpass filtering...
+***Running normalization: fft
+Running Matlab FFT
+0|5|10|15|20|25|30|35|40|45|50|55|60|65|70|75|80|85|90|95|100|100
+Finished.
+restoring uncropped movie and converting to cell...
+Elapsed time is 28.181154 seconds.
+registering frames...
+registering sublists: 1  1501  3001
+Performing transfturboreg registration and affine transformation.
+1-1500 1/2
+Finished.
+1501-3001 2/2
+Finished.
+Elapsed time is 32.911102 seconds.
+[Warning: The DrawMode property will be removed in a future release. Use the SortMethod property instead.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('subplot', 'C:\Program Files\MATLAB\R2024a\toolbox\matlab\graph2d\subplot.m', 563)" style="font-weight:bold">subplot</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024a\toolbox\matlab\graph2d\subplot.m',563,0)">line 563</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciapkg.motion_correction.turboregMovie>subfxn_dispMovieFrames', 'C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+motion_correction\turboregMovie.m', 1320)" style="font-weight:bold">ciapkg.motion_correction.turboregMovie>subfxn_dispMovieFrames</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+motion_correction\turboregMovie.m',1320,0)">line 1320</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciapkg.motion_correction.turboregMovie', 'C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+motion_correction\turboregMovie.m', 504)" style="font-weight:bold">ciapkg.motion_correction.turboregMovie</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+motion_correction\turboregMovie.m',504,0)">line 504</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciapkg.api.turboregMovie', 'C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+api\turboregMovie.m', 10)" style="font-weight:bold">ciapkg.api.turboregMovie</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+api\turboregMovie.m',10,0)">line 10</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/modelPreprocessMovieFunction/subfxn_turboregInputMovie', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovieFunction.m', 2057)" style="font-weight:bold">ciatah/modelPreprocessMovieFunction/subfxn_turboregInputMovie</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovieFunction.m',2057,0)">line 2057</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/modelPreprocessMovieFunction', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovieFunction.m', 934)" style="font-weight:bold">ciatah/modelPreprocessMovieFunction</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovieFunction.m',934,0)">line 934</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/modelPreprocessMovie', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovie.m', 42)" style="font-weight:bold">ciatah/modelPreprocessMovie</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovie.m',42,0)">line 42</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/runPipeline', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\runPipeline.m', 211)" style="font-weight:bold">ciatah/runPipeline</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\runPipeline.m',211,0)">line 211</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/display', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\display.m', 6)" style="font-weight:bold">ciatah/display</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\display.m',6,0)">line 6</a>)] 
+[Warning: The DrawMode property will be removed in a future release. Use the SortMethod property instead.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('subplot', 'C:\Program Files\MATLAB\R2024a\toolbox\matlab\graph2d\subplot.m', 563)" style="font-weight:bold">subplot</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024a\toolbox\matlab\graph2d\subplot.m',563,0)">line 563</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciapkg.motion_correction.turboregMovie>subfxn_dispMovieFrames', 'C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+motion_correction\turboregMovie.m', 1325)" style="font-weight:bold">ciapkg.motion_correction.turboregMovie>subfxn_dispMovieFrames</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+motion_correction\turboregMovie.m',1325,0)">line 1325</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciapkg.motion_correction.turboregMovie', 'C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+motion_correction\turboregMovie.m', 504)" style="font-weight:bold">ciapkg.motion_correction.turboregMovie</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+motion_correction\turboregMovie.m',504,0)">line 504</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciapkg.api.turboregMovie', 'C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+api\turboregMovie.m', 10)" style="font-weight:bold">ciapkg.api.turboregMovie</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+api\turboregMovie.m',10,0)">line 10</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/modelPreprocessMovieFunction/subfxn_turboregInputMovie', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovieFunction.m', 2057)" style="font-weight:bold">ciatah/modelPreprocessMovieFunction/subfxn_turboregInputMovie</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovieFunction.m',2057,0)">line 2057</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/modelPreprocessMovieFunction', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovieFunction.m', 934)" style="font-weight:bold">ciatah/modelPreprocessMovieFunction</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovieFunction.m',934,0)">line 934</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/modelPreprocessMovie', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovie.m', 42)" style="font-weight:bold">ciatah/modelPreprocessMovie</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovie.m',42,0)">line 42</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/runPipeline', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\runPipeline.m', 211)" style="font-weight:bold">ciatah/runPipeline</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\runPipeline.m',211,0)">line 211</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/display', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\display.m', 6)" style="font-weight:bold">ciatah/display</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\display.m',6,0)">line 6</a>)] 
+[Warning: The DrawMode property will be removed in a future release. Use the SortMethod property instead.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('subplot', 'C:\Program Files\MATLAB\R2024a\toolbox\matlab\graph2d\subplot.m', 563)" style="font-weight:bold">subplot</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024a\toolbox\matlab\graph2d\subplot.m',563,0)">line 563</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciapkg.motion_correction.turboregMovie>subfxn_dispMovieFrames', 'C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+motion_correction\turboregMovie.m', 1329)" style="font-weight:bold">ciapkg.motion_correction.turboregMovie>subfxn_dispMovieFrames</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+motion_correction\turboregMovie.m',1329,0)">line 1329</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciapkg.motion_correction.turboregMovie', 'C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+motion_correction\turboregMovie.m', 504)" style="font-weight:bold">ciapkg.motion_correction.turboregMovie</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+motion_correction\turboregMovie.m',504,0)">line 504</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciapkg.api.turboregMovie', 'C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+api\turboregMovie.m', 10)" style="font-weight:bold">ciapkg.api.turboregMovie</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+api\turboregMovie.m',10,0)">line 10</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/modelPreprocessMovieFunction/subfxn_turboregInputMovie', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovieFunction.m', 2057)" style="font-weight:bold">ciatah/modelPreprocessMovieFunction/subfxn_turboregInputMovie</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovieFunction.m',2057,0)">line 2057</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/modelPreprocessMovieFunction', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovieFunction.m', 934)" style="font-weight:bold">ciatah/modelPreprocessMovieFunction</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovieFunction.m',934,0)">line 934</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/modelPreprocessMovie', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovie.m', 42)" style="font-weight:bold">ciatah/modelPreprocessMovie</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovie.m',42,0)">line 42</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/runPipeline', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\runPipeline.m', 211)" style="font-weight:bold">ciatah/runPipeline</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\runPipeline.m',211,0)">line 211</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/display', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\display.m', 6)" style="font-weight:bold">ciatah/display</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\display.m',6,0)">line 6</a>)] 
+[Warning: Error updating Text.
+
+ String scalar or character vector must have valid interpreter syntax:
+Diff image #1 and #2
+] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('defaulterrorcallback', 'C:\Program Files\MATLAB\R2024a\toolbox\matlab\graphics\objectsystem\defaulterrorcallback.m', 12)" style="font-weight:bold">defaulterrorcallback</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024a\toolbox\matlab\graphics\objectsystem\defaulterrorcallback.m',12,0)">line 12</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciapkg.motion_correction.turboregMovie>subfxn_dispMovieFrames', 'C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+motion_correction\turboregMovie.m', 1334)" style="font-weight:bold">ciapkg.motion_correction.turboregMovie>subfxn_dispMovieFrames</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+motion_correction\turboregMovie.m',1334,0)">line 1334</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciapkg.motion_correction.turboregMovie', 'C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+motion_correction\turboregMovie.m', 504)" style="font-weight:bold">ciapkg.motion_correction.turboregMovie</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+motion_correction\turboregMovie.m',504,0)">line 504</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciapkg.api.turboregMovie', 'C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+api\turboregMovie.m', 10)" style="font-weight:bold">ciapkg.api.turboregMovie</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+api\turboregMovie.m',10,0)">line 10</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/modelPreprocessMovieFunction/subfxn_turboregInputMovie', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovieFunction.m', 2057)" style="font-weight:bold">ciatah/modelPreprocessMovieFunction/subfxn_turboregInputMovie</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovieFunction.m',2057,0)">line 2057</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/modelPreprocessMovieFunction', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovieFunction.m', 934)" style="font-weight:bold">ciatah/modelPreprocessMovieFunction</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovieFunction.m',934,0)">line 934</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/modelPreprocessMovie', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovie.m', 42)" style="font-weight:bold">ciatah/modelPreprocessMovie</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovie.m',42,0)">line 42</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/runPipeline', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\runPipeline.m', 211)" style="font-weight:bold">ciatah/runPipeline</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\runPipeline.m',211,0)">line 211</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/display', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\display.m', 6)" style="font-weight:bold">ciatah/display</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\display.m',6,0)">line 6</a>)] 
+Elapsed time is 33.467530 seconds.
+removing ref picture
+=======
+Elapsed time is 49.481280 seconds.
+$$$$$$$
+3001-6000 2/2
+$$$$$$$
+ioptions = 
+  <a href="matlab:helpPopup('struct')" style="font-weight:bold">struct</a> with fields:
+
+                                   mcMethod: 'turboreg'
+    precomputedRegistrationCooordsFullMovie: ''
+                           turboregRotation: 0
+                                  RegisType: 1
+                                   parallel: 1
+                               meanSubtract: 1
+                      meanSubtractNormalize: 1
+                           complementMatrix: 1
+                              normalizeType: 'bandpass'
+                            registrationFxn: 'transfturboreg'
+                                    freqLow: 2
+                                   freqHigh: 60
+                                    SmoothX: 10
+                                    SmoothY: 10
+                                    zapMean: 0
+                    normalizeBeforeRegister: 'bandpass'
+                             imagejFFTLarge: 10000
+                             imagejFFTSmall: 80
+                saveNormalizeBeforeRegister: []
+                                 cropCoords: [108 87 272 212]
+                            closeMatlabPool: 0
+                                   refFrame: 100
+                             refFrameMatrix: [240×376 single]
+                              optsNoRMCorre: []
+               df_AccumulatedFieldSmoothing: 0.5400
+                                   df_Niter: [500 400 200]
+                           df_PyramidLevels: 3
+                             displayOptions: 1
+Movie dims: 240   376  6000 | Movie size: 2065.429Mb | 240   376  6000 | single
+options:
+                                   mcMethod: 'turboreg'
+                           inputDatasetName: '/1'
+                                  frameList: []
+                                   refFrame: 100
+                             refFrameMatrix: [240×376 single]
+                            registrationFxn: 'transfturboreg'
+                                  removeNan: 0
+                              nanReplaceVal: 0
+                             displayOptions: 1
+                         saveTurboregCoords: []
+             precomputedRegistrationCooords: []
+    precomputedRegistrationCooordsFullMovie: ''
+                                  RegisType: 1
+                                    SmoothX: 10
+                                    SmoothY: 10
+                                    minGain: 0
+                                     Levels: 3
+                                 Lastlevels: 1
+                                    Epsilon: 1.1921e-07
+                                    zapMean: 0
+                                     Interp: 'bilinear'
+                           turboregRotation: 0
+                                   maxFrame: []
+                           subsetSizeFrames: 2000
+                                   parallel: 1
+                            closeMatlabPool: 0
+                                  blackEdge: 0
+                                 cropCoords: [108 87 272 212]
+                                removeEdges: 0
+                                   pxToCrop: 4
+                           altMovieRegister: []
+                        altMovieRegisterNum: 2
+                           complementMatrix: 1
+                               meanSubtract: 1
+                      meanSubtractNormalize: 1
+                              normalizeType: 'bandpass'
+                               matlabdiskR1: 10
+                               matlabdiskR2: 3
+                     bandpassBeforeRegister: 0
+                    normalizeBeforeRegister: 'bandpass'
+                             imagejFFTLarge: 10000
+                             imagejFFTSmall: 80
+                           normalizeFreqLow: 40
+                          normalizeFreqHigh: 100
+                      normalizeBandpassType: 'bandpass'
+                      normalizeBandpassMask: 'gaussian'
+                saveNormalizeBeforeRegister: []
+                                    freqLow: 2
+                                   freqHigh: 60
+                                   showFigs: 1
+                                  waitbarOn: 1
+                      returnNormalizedMovie: 0
+                                computeCorr: 0
+                              optsNoRMCorre: []
+                                  dfExclude: []
+               df_AccumulatedFieldSmoothing: 0.5400
+                                   df_Niter: [500 400 200]
+                           df_PyramidLevels: 3
+                          df_DisplayWaitbar: 0
+Starting motion correction (turboreg)...
+cropping stack...
+cropped dims: 240   376  3001
+cropped dims: 126   165  3001
+bandpass...
+***Running normalization: fft
+Running Matlab FFT
+0|5|10|15|20|25|30|35|40|45|50|55|60|65|70|75|80|85|90|95|100|100
+Finished.
+mean subtracting and complementing matrix...
+subtracting mean: 0|2|3|5|7|8|10|12|13|15|17|18|20|22|23|25|27|28|30|32|33|35|37|38|40|42|43|45|47|48|50|52|53|55|57|58|60|62|63|65|67|68|70|72|73|75|77|78|80|82|83|85|87|88|90|92|93|95|97|98|100|100
+[Warning: Error updating Text.
+
+ String scalar or character vector must have valid interpreter syntax:
+Diff image #1 and #2
+] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('defaulterrorcallback', 'C:\Program Files\MATLAB\R2024a\toolbox\matlab\graphics\objectsystem\defaulterrorcallback.m', 12)" style="font-weight:bold">defaulterrorcallback</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024a\toolbox\matlab\graphics\objectsystem\defaulterrorcallback.m',12,0)">line 12</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciapkg.motion_correction.turboregMovie>subfxn_dispMovieFrames', 'C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+motion_correction\turboregMovie.m', 1334)" style="font-weight:bold">ciapkg.motion_correction.turboregMovie>subfxn_dispMovieFrames</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+motion_correction\turboregMovie.m',1334,0)">line 1334</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciapkg.motion_correction.turboregMovie/cropAndNormalizeInputMovie', 'C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+motion_correction\turboregMovie.m', 1304)" style="font-weight:bold">ciapkg.motion_correction.turboregMovie/cropAndNormalizeInputMovie</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+motion_correction\turboregMovie.m',1304,0)">line 1304</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciapkg.motion_correction.turboregMovie', 'C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+motion_correction\turboregMovie.m', 391)" style="font-weight:bold">ciapkg.motion_correction.turboregMovie</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+motion_correction\turboregMovie.m',391,0)">line 391</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciapkg.api.turboregMovie', 'C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+api\turboregMovie.m', 10)" style="font-weight:bold">ciapkg.api.turboregMovie</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+api\turboregMovie.m',10,0)">line 10</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/modelPreprocessMovieFunction/subfxn_turboregInputMovie', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovieFunction.m', 2057)" style="font-weight:bold">ciatah/modelPreprocessMovieFunction/subfxn_turboregInputMovie</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovieFunction.m',2057,0)">line 2057</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/modelPreprocessMovieFunction', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovieFunction.m', 934)" style="font-weight:bold">ciatah/modelPreprocessMovieFunction</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovieFunction.m',934,0)">line 934</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/modelPreprocessMovie', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovie.m', 42)" style="font-weight:bold">ciatah/modelPreprocessMovie</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovie.m',42,0)">line 42</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/runPipeline', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\runPipeline.m', 211)" style="font-weight:bold">ciatah/runPipeline</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\runPipeline.m',211,0)">line 211</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/display', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\display.m', 6)" style="font-weight:bold">ciatah/display</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\display.m',6,0)">line 6</a>)] 
+turboreg-ing...
+0% | 3% | 7% | 10% | 13% | 17% | 20% | 23% | 27% | 30% | 33% | 37% | 40% | 43% | 47% | 50% | 53% | 57% | 60% | 63% | 67% | 70% | 73% | 77% | 80% | 83% | 87% | 90% | 93% | 97% | 100% | 100%
+Elapsed time is 13.487085 seconds.
+bandpass filtering...
+***Running normalization: fft
+Running Matlab FFT
+0|5|10|15|20|25|30|35|40|45|50|55|60|65|70|75|80|85|90|95|100|100
+Finished.
+restoring uncropped movie and converting to cell...
+Elapsed time is 24.556485 seconds.
+registering frames...
+registering sublists: 1  1501  3001
+Performing transfturboreg registration and affine transformation.
+1-1500 1/2
+Finished.
+1501-3001 2/2
+Finished.
+Elapsed time is 29.508648 seconds.
+[Warning: Error updating Text.
+
+ String scalar or character vector must have valid interpreter syntax:
+Diff image #1 and #2
+] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('defaulterrorcallback', 'C:\Program Files\MATLAB\R2024a\toolbox\matlab\graphics\objectsystem\defaulterrorcallback.m', 12)" style="font-weight:bold">defaulterrorcallback</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024a\toolbox\matlab\graphics\objectsystem\defaulterrorcallback.m',12,0)">line 12</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciapkg.motion_correction.turboregMovie>subfxn_dispMovieFrames', 'C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+motion_correction\turboregMovie.m', 1334)" style="font-weight:bold">ciapkg.motion_correction.turboregMovie>subfxn_dispMovieFrames</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+motion_correction\turboregMovie.m',1334,0)">line 1334</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciapkg.motion_correction.turboregMovie', 'C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+motion_correction\turboregMovie.m', 504)" style="font-weight:bold">ciapkg.motion_correction.turboregMovie</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+motion_correction\turboregMovie.m',504,0)">line 504</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciapkg.api.turboregMovie', 'C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+api\turboregMovie.m', 10)" style="font-weight:bold">ciapkg.api.turboregMovie</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\+ciapkg\+api\turboregMovie.m',10,0)">line 10</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/modelPreprocessMovieFunction/subfxn_turboregInputMovie', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovieFunction.m', 2057)" style="font-weight:bold">ciatah/modelPreprocessMovieFunction/subfxn_turboregInputMovie</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovieFunction.m',2057,0)">line 2057</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/modelPreprocessMovieFunction', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovieFunction.m', 934)" style="font-weight:bold">ciatah/modelPreprocessMovieFunction</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovieFunction.m',934,0)">line 934</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/modelPreprocessMovie', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovie.m', 42)" style="font-weight:bold">ciatah/modelPreprocessMovie</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\modelPreprocessMovie.m',42,0)">line 42</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/runPipeline', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\runPipeline.m', 211)" style="font-weight:bold">ciatah/runPipeline</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\runPipeline.m',211,0)">line 211</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('ciatah/display', 'C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\display.m', 6)" style="font-weight:bold">ciatah/display</a> (<a href="matlab: opentoline('C:\Users\julia\Documents\MATLAB\ciatah-master\@ciatah\display.m',6,0)">line 6</a>)] 
+Elapsed time is 29.932347 seconds.
+removing ref picture
+=======
+Elapsed time is 39.366871 seconds.
+pxToCropAllTmp: 7
+Adjusting pxToCropAll
+pxToCropAll: 7
+Calculating and plotting correlation metric
+Calculating correlation metric: 92 | 25 | 67 | 83 | 42 | 100 | 8 | 58 | 75 | 33 | 17 | 50 | $$$$$$$
+thisMovie: single | 240   376  6000
+$$$$$$$
+*******
+crop movie...
+$$$$$$$
+thisMovie: single | 240   376  6000
+$$$$$$$
+*******
+fixDropFrames movie...
+-------
+adding in dropped frames if any
+Add log files to folder in order to add back dropped frames
+$$$$$$$
+thisMovie: single | 240   376  6000
+$$$$$$$
+*******
+dfof movie...
+getting F0...
+2|4|6|8|10|13|15|17|19|21|23|25|27|29|31|33|35|38|40|42|44|46|48|50|52|54|56|58|60|63|65|67|69|71|73|75|77|79|81|83|85|88|90|92|94|96|98|100
+input class: double
+creating HDF5 file: C:\Users\julia\Documents\EngramResearch\newBatchOfData2024\filesModified\MiniscopeFiles\Abe\2020_02_19_p001_m01_exp01_trial01\processing_info\20241124_181758_2020_02_19_p001_m01_NULL000_inputMovieF0.h5
+writing HDF5 file: C:\Users\julia\Documents\EngramResearch\newBatchOfData2024\filesModified\MiniscopeFiles\Abe\2020_02_19_p001_m01_exp01_trial01\processing_info\20241124_181758_2020_02_19_p001_m01_NULL000_inputMovieF0.h5
+success!!!
+F(t)/F0 - 1...
+$$$$$$$
+thisMovie: single | 240   376  6000
+$$$$$$$
+*******
+downsampleTime movie...
+Temporal downsample factor: 4
+# frames after downsampling: 1500
+5|11|16|21|27|32|37|43|48|53|59|64|69|74|80|85|90|96|100
+Movie dims: 240   376  6000 | Movie size: 2065.429Mb | 240   376  6000 | single
+Movie dims: 240   376  1500 | Movie size: 516.3573Mb | 240   376  1500 | single
+save matrix size: 240   376  1500
+Saving to: C:\Users\julia\Documents\EngramResearch\newBatchOfData2024\filesModified\MiniscopeFiles\Abe\2020_02_19_p001_m01_exp01_trial01\2020_02_19_p001_m01_NULL000_spFltBfReg_treg_crop_fxFrms_dfof_dsTime_1.h5
+input class: single
+creating HDF5 file: C:\Users\julia\Documents\EngramResearch\newBatchOfData2024\filesModified\MiniscopeFiles\Abe\2020_02_19_p001_m01_exp01_trial01\2020_02_19_p001_m01_NULL000_spFltBfReg_treg_crop_fxFrms_dfof_dsTime_1.h5
+writing HDF5 file: C:\Users\julia\Documents\EngramResearch\newBatchOfData2024\filesModified\MiniscopeFiles\Abe\2020_02_19_p001_m01_exp01_trial01\2020_02_19_p001_m01_NULL000_spFltBfReg_treg_crop_fxFrms_dfof_dsTime_1.h5
+success!!!
+Done! Time elapsed: 15.5 seconds | 0.259 minutes 
+$$$$$$$
+thisMovie: single | 240   376  1500
+$$$$$$$
+Elapsed time is 190.015919 seconds.
+Elapsed time is 190.033076 seconds.
